@@ -1,0 +1,30 @@
+
+
+<h3>
+Quantos Dias voce Viveu ?
+</h3>
+
+<script>
+// Função Pula linha 
+function pula() {
+document.write("<br>");
+}
+// Função coloca linha separando
+function Linha() {
+document.write("<hr>");
+};
+
+// programa dados_vitais.html
+
+var idade = prompt("Quantos anos voce tem?");
+var dias = idade * 365;
+Linha();
+document.write("Voce ja viveu " + dias + " dias de vida");
+pula();
+
+var batimentos = dias * 24 * 60 * 80;
+Linha();
+document.write("Seu coração já bateu " + batimentos +" vezes.");
+pula();
+document.write("Haja coração!");
+</script>

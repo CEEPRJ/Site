@@ -1,0 +1,50 @@
+
+<h3>Álcool ou Gasolina?</h3>.
+
+<script>
+
+// função
+
+// Função Pula linha 
+var pula = function() {
+document.write("<br>");
+};
+// Função coloca linha separando
+var Linha = function() {
+document.write("<hr>");
+};
+// Função mostra uma frase
+var mostra = function(frase) {
+document.write(frase);
+pula();
+};
+
+// variavel
+var combustivel= prompt("Qual é o Combustivel Alcool ou Gasolina ?");
+var tanque = 40;
+var gasolina = 480;
+
+//if(combustivel)
+var consumoDeGasolina = (gasolina / tanque);
+var Alcool = 300;
+var caminhoComAlcool = (Alcool / tanque);
+
+// programa
+
+document.write("Com um tanque de 40L rodou 480 com Gasolina e 300 com Alcool<br>");
+Linha();
+document.write("Consumo em Gasolina km Rodado:");
+document.write(consumoDeGasolina);
+Linha();
+document.write("Consumo em Alcool km Rodado:");
+document.write(caminhoComAlcool);
+pula();
+
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,54 @@
+<h3>IMC</h3>
+
+<script>
+// Função Pula linha 
+var pula = function() {
+document.write("<br>");
+};
+// Função coloca linha separando
+var Linha = function() {
+document.write("<hr>");
+};
+// Função mostra uma frase
+var mostra = function(frase) {
+document.write(frase);
+pula();
+};
+// Função IMC 
+	var calculaIMC = function(altura, peso) {
+	var imc = peso / (altura * altura);
+	return imc;
+	//mostra("IMC calculado é " + imc);
+};
+
+// variavel
+var nome = prompt("Bom Dia! Qual é o seu nome?");
+var idade = prompt(nome + ", Quantos anos você tem?");
+var peso = prompt("Qual é seu peso?");
+var altura = prompt("Qual é sua altura ?");
+var imc = calculaIMC(altura, peso);
+
+//programa
+
+document.write("Bem vindo, " + nome);
+pula();
+document.write(nome + " tem " + idade + " anos.");
+pula();
+document.write("O seu imc é " + Math.round(imc));
+Linha();
+document.write("Está " + Math.round(imc - 18.5) +" acima do limite da magresa");
+Linha();
+document.write("Mais está " + Math.round(imc - 24.9) +" acima do limite do Normal");
+Linha();
+document.write("Mais está " + Math.round(imc - 35.0) + " abaixo do limite da Obisidade");
+Linha();
+
+
+
+
+</script>
+
+
+
+
+</script>
